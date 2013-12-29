@@ -19,12 +19,10 @@ int64_t worstcase(int x) {
 
 
 int main(void) {
-
-    int64_t answer = 0;
-
-    const string abc = "abcdefghijklmnopqrstuvwxyz";
-    const string num = "0123456789";
-    const string passSpace = num + abc;
+   int64_t answer = 0;
+     const string abc = "abcdefghijklmnopqrstuvwxyz";
+     const string num = "0123456789";
+     const string passSpace = num + abc;
 
     /*
      * Assign the different vaules for each of the letters in the search space.
@@ -34,6 +32,7 @@ int main(void) {
         for(string::const_iterator it=abc.begin(); it != abc.end(); ++it) {
             SearchSpace1[*it] = i;
             ++i;
+
         }
 
         // Filling the second workspace
